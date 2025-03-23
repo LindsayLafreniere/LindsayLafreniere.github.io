@@ -297,9 +297,9 @@ nav a.active::after {
 
 .profile-image {
   position: relative;
-  width: 80%;
-  padding-bottom: 80%;
-  border-radius: 50%;
+  width: 100%;
+  padding-bottom: 0%;
+  border-radius: 0%;
   overflow: hidden;
   z-index: 2;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23d1d5db'/%3E%3Cpath d='M100,60 C86,60 75,71 75,85 C75,99 85,110 100,110 C115,110 125,99 125,85 C125,71 114,60 100,60 Z M100,120 C75,120 50,134 50,160 L150,160 C150,134 125,120 100,120 Z' fill='%239ca3af'/%3E%3C/svg%3E");
