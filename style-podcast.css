@@ -54,6 +54,18 @@
   margin-bottom: 1.5rem;
 }
 
+.podcast-grid-item .featured-tag {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  width: fit-content;
+}
+
 .audio-player {
   margin: 1rem 0;
   padding: 1rem;
@@ -105,4 +117,3 @@
     grid-template-columns: 1fr;
   }
 }
-
