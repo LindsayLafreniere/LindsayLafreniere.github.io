@@ -1,0 +1,65 @@
+/* Home page contact section styles */
+.home-contact-section {
+  padding: 5rem 0;
+  background-color: var(--white);
+}
+
+.home-contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-contact-message {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--dark-gray);
+}
+
+.home-contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.home-contact-info .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.home-contact-info .contact-item svg {
+  color: var(--primary-color);
+}
+
+.home-contact-info .contact-item a, 
+.home-contact-info .contact-item span {
+  color: var(--dark-gray);
+  transition: color var(--transition-short);
+}
+
+.home-contact-info .contact-item a:hover {
+  color: var(--primary-color);
+}
+
+.home-contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .home-contact-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .home-contact-buttons .cta-button {
+    width: 80%;
+  }
+}
+

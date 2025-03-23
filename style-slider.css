@@ -1,0 +1,60 @@
+/* Slider styles for homepage sections */
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.3s ease-out;
+  will-change: transform;
+  touch-action: pan-x;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  touch-action: pan-x;
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 5;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.slider-button {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  pointer-events: auto;
+  opacity: 0.7;
+}
+
+.slider-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  opacity: 1;
+}
+
+.slider-button svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .slider-nav {
+    display: none;
+  }
+}
+

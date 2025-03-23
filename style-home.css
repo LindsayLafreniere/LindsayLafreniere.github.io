@@ -1,0 +1,36 @@
+/* Home page specific styles */
+.cta-section {
+  padding: 3rem 0 5rem;
+  text-align: center;
+  background-color: var(--bg-color);
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.podcasts-section {
+  padding: 5rem 0 3rem;
+  background-color: var(--bg-color);
+}
+
+.writing-section {
+  padding: 5rem 0;
+  background-color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .cta-buttons {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .cta-buttons .cta-button {
+    width: 80%;
+  }
+}
+

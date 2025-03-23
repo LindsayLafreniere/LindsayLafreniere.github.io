@@ -1,0 +1,130 @@
+/* Featured Work Section Styles */
+.featured-section {
+  padding: 5rem 0;
+  background-color: var(--white);
+}
+
+.featured-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.featured-wrapper {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.featured-item {
+  flex: 0 0 auto;
+  width: 300px;
+  padding: 1.5rem;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition-short), box-shadow var(--transition-short);
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.featured-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+.featured-thumbnail {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.featured-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-short);
+}
+
+.featured-item:hover .featured-thumbnail img {
+  transform: scale(1.05);
+}
+
+.featured-item h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  margin-bottom: 0.7rem;
+  color: var(--text-color);
+}
+
+.featured-tag {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.featured-description {
+  color: var(--dark-gray);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  height: 3.2em;
+  overflow: hidden;
+  position: relative;
+}
+
+.description-truncated {
+  height: 3.2em;
+  overflow: hidden;
+  position: relative;
+}
+
+.description-expanded {
+  height: auto;
+}
+
+.toggle-description {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.toggle-description:hover {
+  text-decoration: underline;
+}
+
+.featured-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+.featured-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--light-gray);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.featured-dot.active {
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .featured-item {
+    width: 85vw;
+  }
+}
+

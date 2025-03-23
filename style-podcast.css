@@ -1,0 +1,108 @@
+/* Podcast page specific styles */
+.podcast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.podcast-grid-item {
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  transition: transform var(--transition-short), box-shadow var(--transition-short);
+  display: flex;
+  flex-direction: column;
+}
+
+.podcast-grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+.podcast-grid-item .featured-thumbnail {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.podcast-grid-item .featured-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-short);
+}
+
+.podcast-grid-item:hover .featured-thumbnail img {
+  transform: scale(1.05);
+}
+
+.podcast-grid-item h3 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-color);
+}
+
+.podcast-grid-item .featured-description {
+  color: var(--dark-gray);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.audio-player {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.audio-player audio {
+  width: 100%;
+  height: 40px;
+}
+
+.audio-label {
+  font-size: 0.85rem;
+  color: var(--dark-gray);
+  font-weight: 500;
+}
+
+.podcast-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  transition: all var(--transition-short);
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.podcast-link:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .podcast-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 576px) {
+  .podcast-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
