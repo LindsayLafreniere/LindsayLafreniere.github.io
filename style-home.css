@@ -28,7 +28,12 @@
     gap: 1rem;
     align-items: center;
   }
-  
+.writing-section img,
+.podcasts-section img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Ensures square shape */
+  object-fit: cover; /* Prevents distortion and fills the square */
+}  
   .cta-buttons .cta-button {
     width: 80%;
   }
