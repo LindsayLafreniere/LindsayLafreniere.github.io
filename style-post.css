@@ -131,7 +131,7 @@
   width: 100%;
   max-width: 800px; 
   height: auto;
-  margin: 0 auto 2rem;
+  margin: 1rem;
   border-radius: 8px;
   box-shadow: var(--shadow);
 }
