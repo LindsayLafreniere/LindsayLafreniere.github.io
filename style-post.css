@@ -85,7 +85,7 @@
 }
 
 .post-article a {
-  color: #b060c7; /* Logo purple */
+  color: #0e154f; /* Logo purple */
   text-decoration: underline;
   font-weight: 600;
   transition: color 0.3s ease;
@@ -94,8 +94,8 @@
 
 .post-article a:hover,
 .post-article a:focus {
-  color: #b060c7; /* Darker purple */
-  border-bottom-color: #b060c7;
+  color: #0e154f; /* Darker purple */
+  border-bottom-color: #0e154f;
   outline: none;
 }
 
