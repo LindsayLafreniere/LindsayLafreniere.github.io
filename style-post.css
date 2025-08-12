@@ -85,19 +85,20 @@
 }
 
 .post-article a {
-  color: var(--primary-color); /* Use your site’s primary color */
-  text-decoration: none;       /* No underline by default */
-  font-weight: 600;            /* Slightly bold for emphasis */
+  color: #6366F1; /* Logo purple */
+  text-decoration: underline;
+  font-weight: 600;
   transition: color 0.3s ease;
-  border-bottom: 2px solid transparent; /* subtle underline effect on hover */
+  border-bottom: 2px solid transparent;
 }
 
 .post-article a:hover,
 .post-article a:focus {
-  color: var(--primary-color-dark); /* Darker shade on hover for contrast */
-  border-bottom-color: var(--primary-color-dark);
+  color: #4F46E5; /* Darker purple */
+  border-bottom-color: #4F46E5;
   outline: none;
 }
+
 
 
 .post-cta {
