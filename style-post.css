@@ -85,7 +85,7 @@
 }
 
 .post-article a {
-  color: #6366F1; /* Logo purple */
+  color: #b060c7; /* Logo purple */
   text-decoration: underline;
   font-weight: 600;
   transition: color 0.3s ease;
@@ -94,8 +94,8 @@
 
 .post-article a:hover,
 .post-article a:focus {
-  color: #4F46E5; /* Darker purple */
-  border-bottom-color: #4F46E5;
+  color: #b060c7; /* Darker purple */
+  border-bottom-color: #b060c7;
   outline: none;
 }
 
@@ -148,7 +148,7 @@
   width: 100%;
   max-width: 800px; 
   height: auto;
-  margin: 1rem;
+  margin: 0.5rem;
   border-radius: 8px;
   box-shadow: var(--shadow);
 }
