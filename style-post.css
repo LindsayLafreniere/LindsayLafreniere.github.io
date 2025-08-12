@@ -126,6 +126,16 @@
   background-color: rgba(99, 102, 241, 0.1);
 }
 
+/* Feature image styles */
+.feature-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
 /* Podcast post specific styles */
 .podcast-embed {
   margin: 2rem 0;
