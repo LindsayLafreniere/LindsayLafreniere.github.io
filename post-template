@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Post Title | Lindsay Lafreniere</title>
+  <title>Research Investigating the Use of Cannabis as a Substitute for Opioids | Lindsay Lafreniere</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style-post.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,6 @@
 </head>
 <body>
   <div class="noise"></div>
-  
   <div class="cursor-follower"></div>
   
   <header>
@@ -23,7 +22,7 @@
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="about.html" class="nav-link">About</a></li>
           <li><a href="podcasts.html" class="nav-link">Podcasts</a></li>
-          <li><a href="writing.html" class="nav-link">Writing</a></li>
+          <li><a href="writing.html" class="nav-link active">Writing</a></li>
           <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -38,23 +37,43 @@
   <section class="post-header">
     <div class="container">
       <div class="post-meta">
-        <span class="post-category">Category</span>
-        <span class="post-date">Publication Date</span>
+        <span class="post-category">Health</span>
+        <span class="post-date">[INSERT DATE]</span>
       </div>
-      <h1 class="reveal-text">Post Title</h1>
-      <div class="post-publication">Published in <span>Publication Name</span></div>
+      <h1 class="reveal-text">Research Investigating the Use of Cannabis as a Substitute for Opioids</h1>
+      <div class="post-publication">Published in <span>[INSERT PUBLICATION NAME]</span></div>
     </div>
   </section>
+
+  <div class="container">
+    <div class="feature-image fade-in">
+      <img src="[INSERT FEATURE IMAGE URL]" alt="Cannabis and Opioids Research">
+    </div>
+  </div>
 
   <section class="post-content">
     <div class="container">
       <article class="post-article fade-in">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+        <div class="c-wysiwyg wysiwyg section">
+          <div class="rte">
+            <p>[First paragraph of your article content goes here.]</p>
+            <p>[Second paragraph of your article content goes here.]</p>
+            <p>[Continue with the rest of the article text…]</p>
+          </div>
 
-        <p>Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio.</p>
-        
+          <div class="text">
+            <p>[Optional additional section of text goes here.]</p>
+          </div>
+
+          <div class="text">
+            <p>[Further article paragraphs and closing statements.]</p>
+          </div>
+
+          <div class="clearfix"></div>
+        </div>
+
         <div class="post-cta">
-          <a href="#" class="link-button">Read the full article</a>
+          <a href="[LINK TO FULL ORIGINAL ARTICLE]" target="_blank" rel="noopener noreferrer" class="link-button">View full article</a>
         </div>
       </article>
       
@@ -85,7 +104,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p> 2025 Lindsay Lafreniere. All rights reserved.</p>
+        <p>2025 Lindsay Lafreniere. All rights reserved.</p>
       </div>
     </div>
   </footer>
