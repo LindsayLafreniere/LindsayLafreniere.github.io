@@ -99,6 +99,13 @@
   outline: none;
 }
 
+.post-left-img {
+  float: left;       /* Floats the image to the left */
+  margin-right: 20px; /* Space between image and text */
+  margin-bottom: 20px; /* Space below image so text doesn't stick */
+  width: 40%;        /* Adjust size as needed */
+}
+
 
 .post-cta {
   margin-top: 2rem;
