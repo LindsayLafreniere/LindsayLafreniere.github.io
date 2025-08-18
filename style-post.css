@@ -152,6 +152,27 @@
   box-shadow: var(--shadow);
 }
 
+/* Embedded post images (half width, floated right) */
+.post-image.half-width {
+  width: 50%;
+  float: right;
+  margin: 1rem 0 1rem 2rem; /* top, right, bottom, left */
+  text-align: center;
+}
+
+.post-image.half-width img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.post-image.half-width .caption {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.3rem;
+  font-style: italic;
+}
 
 /* Podcast post specific styles */
 .podcast-embed {
