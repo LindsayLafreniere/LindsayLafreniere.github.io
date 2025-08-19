@@ -66,6 +66,41 @@
   color: var(--text-color);
 }
 
+/* Headings: smaller, modern, and responsive */
+h2 {
+  font-size: 1.5rem;        /* base size */
+  font-weight: 600;         
+  margin: 1.2em 0 0.6em;
+  line-height: 1.3;
+}
+
+/* On small screens, make h2 even smaller */
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Modern, softer bullets */
+ul {
+  list-style-type: disc;
+  margin-left: 1.5em;
+  padding-left: 0;
+}
+
+ul li::marker {
+  color: #666;              /* softer gray bullet */
+  font-size: 0.85em;        /* slightly smaller bullet */
+}
+
+/* Ordered lists for consistency */
+ol {
+  list-style-type: decimal;
+  margin-left: 1.5em;
+  padding-left: 0;
+}
+
+
 .post-article h3 {
   font-family: var(--font-heading);
   font-size: 1.4rem;
