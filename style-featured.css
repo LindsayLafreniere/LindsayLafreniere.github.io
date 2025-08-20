@@ -80,7 +80,8 @@
 }
 
 .description-truncated {
-  height: 3.2em;
+  line-height: 1.6em;   /* or whatever your site uses */
+  max-height: calc(1.6em * 5);  /* = 5 lines tall */
   overflow: hidden;
   position: relative;
 }
