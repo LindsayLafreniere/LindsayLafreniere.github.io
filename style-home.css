@@ -39,3 +39,10 @@
   }
 }
 
+/* Make excerpts longer on homepage */
+.description-truncated {
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* increase lines shown (default is usually 2) */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
