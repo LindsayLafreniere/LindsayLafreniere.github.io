@@ -80,14 +80,15 @@
 }
 
 .description-truncated {
-  line-height: 1.6em;   /* or whatever your site uses */
-  max-height: calc(1.6em * 5);  /* = 5 lines tall */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5; /* show 5 lines */
   overflow: hidden;
-  position: relative;
 }
 
 .description-expanded {
-  height: auto;
+  display: block; /* remove clamp */
+  -webkit-line-clamp: unset;
 }
 
 .toggle-description {
