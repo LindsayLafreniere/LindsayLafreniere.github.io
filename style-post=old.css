@@ -39,8 +39,7 @@
 }
 
 .post-content {
-  /* added horizontal & extra bottom padding to avoid edge clipping */
-  padding: 3rem 1rem 6rem;
+  padding: 3rem 0 5rem;
   background-color: var(--bg-color);
 }
 
@@ -51,7 +50,6 @@
   padding: 2.5rem;
   border-radius: 10px;
   box-shadow: var(--shadow);
-  overflow: visible; /* guard against accidental clipping */
 }
 
 .post-article p {
@@ -90,6 +88,10 @@ ul {
   padding-left: 0;
 }
 
+ul li::marker {
+  color: #666;              /* softer gray bullet */
+  font-size: 0.85em;        /* slightly smaller bullet */
+}
 
 /* Ordered lists for consistency */
 ol {
@@ -97,6 +99,7 @@ ol {
   margin-left: 1.5em;
   padding-left: 0;
 }
+
 
 .post-article h3 {
   font-family: var(--font-heading);
@@ -138,21 +141,21 @@ ol {
   width: 40%;        /* Adjust size as needed */
 }
 
+
 .post-cta {
   margin-top: 2rem;
   text-align: center;
-  padding-inline: 1rem; /* added side padding for buttons */
-  overflow: visible;    /* guard */
 }
 
 .link-button {
   display: inline-block;
   padding: 0.8rem 1.5rem;
-  margin: 0.5rem 0; /* vertical breathing room */
   background-color: transparent;
   color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
   font-weight: 600;
-  transition: background-color var(--transition-short), color var(--transition-short);
+  transition: all var(--transition-short);
 }
 
 .link-button:hover {
@@ -164,8 +167,6 @@ ol {
   display: flex;
   justify-content: center;
   margin-top: 3rem;
-  padding-inline: 1rem; /* added side padding for nav buttons */
-  overflow: visible;    /* guard */
 }
 
 .nav-button {
@@ -252,14 +253,5 @@ ol {
   
   .post-article p {
     font-size: 1rem;
-  }
-
-  /* a bit more breathing room on small screens */
-  .post-content {
-    padding: 2rem 1.25rem 5rem;
-  }
-  .post-cta,
-  .post-navigation {
-    padding-inline: 1.25rem;
   }
 }
