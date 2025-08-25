@@ -150,13 +150,15 @@ ol {
 .link-button {
   display: inline-block;
   padding: 0.8rem 1.5rem;
+  margin-right: 1rem; /* prevents clipping */
   background-color: transparent;
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
   border-radius: 50px;
   font-weight: 600;
-  transition: all var(--transition-short);
+  transition: background-color var(--transition-short), color var(--transition-short);
 }
+
 
 .link-button:hover {
   background-color: var(--primary-color);
