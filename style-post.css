@@ -1,0 +1,267 @@
+/* Post page specific styles */
+.post-header {
+  padding: 8rem 0 3rem;
+  background-color: var(--white);
+}
+
+.post-meta {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.post-meta span {
+  color: var(--medium-gray);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.post-header h1 {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  line-height: 1.2;
+}
+
+.post-publication {
+  font-size: 1.1rem;
+  color: var(--dark-gray);
+  margin-bottom: 1rem;
+}
+
+.post-publication span {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.post-content {
+  /* added horizontal & extra bottom padding to avoid edge clipping */
+  padding: 3rem 1rem 6rem;
+  background-color: var(--bg-color);
+}
+
+.post-article {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--white);
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  overflow: visible; /* guard against accidental clipping */
+}
+
+.post-article p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--dark-gray);
+}
+
+.post-article h2 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem;
+  color: var(--text-color);
+}
+
+/* Headings: smaller, modern, and responsive */
+h2 {
+  font-size: 1.5rem;        /* base size */
+  font-weight: 600;         
+  margin: 1.2em 0 0.6em;
+  line-height: 1.3;
+}
+
+/* On small screens, make h2 even smaller */
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Modern, softer bullets */
+ul {
+  list-style-type: disc;
+  margin-left: 1.5em;
+  padding-left: 0;
+}
+
+
+/* Ordered lists for consistency */
+ol {
+  list-style-type: decimal;
+  margin-left: 1.5em;
+  padding-left: 0;
+}
+
+.post-article h3 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  margin: 1.8rem 0 1rem;
+  color: var(--text-color);
+}
+
+.post-article ul, 
+.post-article ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.post-article li {
+  margin-bottom: 0.5rem;
+  color: var(--dark-gray);
+}
+
+.post-article a {
+  color: #6366F1; /* Logo purple */
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.post-article a:hover,
+.post-article a:focus {
+  color: #4F46E5; /* Darker purple */
+  border-bottom-color: #4F46E5;
+  outline: none;
+}
+
+.post-left-img {
+  float: left;       /* Floats the image to the left */
+  margin-right: 20px; /* Space between image and text */
+  margin-bottom: 20px; /* Space below image so text doesn't stick */
+  width: 40%;        /* Adjust size as needed */
+}
+
+.post-cta {
+  margin-top: 2rem;
+  text-align: center;
+  padding-inline: 1rem; /* added side padding for buttons */
+  overflow: visible;    /* guard */
+}
+
+.link-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  margin: 0.5rem 0; /* vertical breathing room */
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background-color var(--transition-short), color var(--transition-short);
+}
+
+.link-button:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.post-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  padding-inline: 1rem; /* added side padding for nav buttons */
+  overflow: visible;    /* guard */
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  color: var(--dark-gray);
+  border-radius: 5px;
+  transition: all var(--transition-short);
+}
+
+.nav-button:hover {
+  color: var(--primary-color);
+  background-color: rgba(99, 102, 241, 0.1);
+}
+
+.feature-image img {
+  display: block;
+  width: 100%;
+  max-width: 800px; 
+  height: auto;
+  margin: 0.5rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+/* Embedded post images (half width, floated right) */
+.post-image.half-width {
+  width: 50%;
+  float: right;
+  margin: 1rem 0 1rem 2rem; /* top, right, bottom, left */
+  text-align: center;
+}
+
+.post-image.half-width img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.post-image.half-width .caption {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.3rem;
+  font-style: italic;
+}
+
+/* Podcast post specific styles */
+.podcast-embed {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: var(--bg-color);
+  border-radius: 8px;
+}
+
+.podcast-embed h3 {
+  margin-bottom: 1rem;
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+}
+
+.podcast-player {
+  width: 100%;
+  height: 150px;
+  background-color: var(--light-gray);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-gray);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .post-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .post-article {
+    padding: 1.5rem;
+  }
+  
+  .post-article p {
+    font-size: 1rem;
+  }
+
+  /* a bit more breathing room on small screens */
+  .post-content {
+    padding: 2rem 1.25rem 5rem;
+  }
+  .post-cta,
+  .post-navigation {
+    padding-inline: 1.25rem;
+  }
+}
