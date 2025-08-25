@@ -80,13 +80,15 @@
 }
 
 .description-truncated {
-  height: 3.2em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5; /* show 5 lines */
   overflow: hidden;
-  position: relative;
 }
 
 .description-expanded {
-  height: auto;
+  display: block; /* remove clamp */
+  -webkit-line-clamp: unset;
 }
 
 .toggle-description {
