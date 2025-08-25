@@ -90,10 +90,6 @@ ul {
   padding-left: 0;
 }
 
-ul li::marker {
-  color: #666;              /* softer gray bullet */
-  font-size: 0.85em;        /* slightly smaller bullet */
-}
 
 /* Ordered lists for consistency */
 ol {
@@ -155,8 +151,6 @@ ol {
   margin: 0.5rem 0; /* vertical breathing room */
   background-color: transparent;
   color: var(--primary-color);
-  border: 2px solid var(--primary-color);
-  border-radius: 50px;
   font-weight: 600;
   transition: background-color var(--transition-short), color var(--transition-short);
 }
