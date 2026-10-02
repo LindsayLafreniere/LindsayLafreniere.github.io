@@ -1,12 +1,12 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Podcasts | Lindsay Lafreniere</title>
+  <title>Lindsay Lafreniere | Communications Specialist, Podcast Producer, & Writer</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style-featured.css">
-  <link rel="stylesheet" href="style-podcast.css">
+  <link rel="stylesheet" href="style-home-contact.css">
+  <link rel="stylesheet" href="style-slider.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
@@ -21,11 +21,12 @@
       <a href="index.html" class="logo">LL</a>
       <nav>
         <ul>
-          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
           <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="podcasts.html" class="nav-link active">Podcasts</a></li>
-          <li><a href="writing.html" class="nav-link">Writing</a></li>
-          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+          <li><a href="index.html#podcasts" class="nav-link">Podcasts</a></li>
+          <li><a href="index.html#writing" class="nav-link">Writing</a></li>
+		  <li><a href="index.html#research" class="nav-link">Research & Reports</a></li>         
+		  <li><a href="index.html#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
       <div class="menu-toggle">
@@ -36,105 +37,410 @@
     </div>
   </header>
 
-  <section class="page-header">
+  <section class="hero">
     <div class="container">
-      <h1 class="reveal-text">Podcasts</h1>
+      <h1 class="reveal-text">Lindsay Lafreniere</h1>
+      <h2 class="reveal-text delay-1">Communications Specialist, Podcast Producer, & Writer</h2>
+      <p class="hero-intro reveal-text delay-2">A trained journalist with more than a decade of experience in media production, communications, and podcasting.</p>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
     </div>
   </section>
 
-  <section class="podcasts-section">
+  <section class="writing-section" id="writing">
     <div class="container">
-      <div class="podcast-grid fade-in">
+      <div class="section-header">
+        <h2 class="reveal-text">Writing</h2>
+      </div>
+      <div class="featured-container" id="featured-slider">
+        <div class="slider-nav">
+          <button class="slider-button prev" aria-label="Previous slide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M15 19l-7-7 7-7"></path>
+            </svg>
+          </button>
+          <button class="slider-button next" aria-label="Next slide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="featured-wrapper">
+
+          
+          <!-- Writing sample 1 -->
+			
+          <article class="featured-item" data-link="post-AI-art-Beth-Frey.html">
+            <span class="featured-tag">Article</span>
+            <div class="featured-thumbnail">
+              <img src="https://www.concordia.ca/cunews/offices/advancement/2023/08/25/singer-roisin-murphy-taps-mfa-grad-beth-frey-to-design-new-album-cover/_jcr_content/parsys/image_244471319.img.jpg/1692979861780.jpg" alt="Beth Frey AI art">
+            </div>
+            <h3>How a ‘weird little hobby’ by artist Beth Frey went viral</h3>
+            <div class="featured-description description-truncated">
+              Fans of the Concordia grad’s AI-generated art include Sam Smith, Cat Power and Darren Aronofsky.  test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test 
+            </div>
+            <span class="toggle-description">Read more</span>
+          </article>
+
+			     <article class="featured-item" data-link="post-Montreal-Girls.html">
+            <span class="featured-tag">Article</span>
+            <div class="featured-thumbnail">
+              <img src="https://www.concordia.ca/cunews/offices/advancement/2023/06/26/film-grad-patricia-chica-debuts-new-feature-montreal-girls/_jcr_content/parsys/image.img.jpg/1687275351803.jpg" alt="Patricia Chica Montreal Girls">
+            </div>
+            <h3>Film grad Patricia Chica debuts new feature, Montréal Girls</h3>
+            <div class="featured-description description-truncated">
+          “You know about Montreal girls, right?”
+
+IMontréal Girls, a new film from Patricia Chica, BFA 95, this loaded question underpins the drama that awaits a student who moves to the city.
+            </div>
+            <span class="toggle-description">Read more</span>
+          </article>
+
+			
+			 <article class="featured-item" data-link="post-missing-murdered-indigenous-women.html">
+            <span class="featured-tag">Article</span>
+            <div class="featured-thumbnail">
+              <img src="https://github.com/LindsayLafreniere/LindsayLafreniere.github.io/blob/main/photos/Missing%20Murdered%20Indigneous%20women%20march%20Montreal%202009%20%20PHOTO%20RILEY%20SPARKS.png?raw=true"
+				  alt="saas sprawl">
+            </div>
+            <h3>Missing justice marches for Indigenous women</h3>
+            <div class="featured-description description-truncated">
+“No one took the Morrison family seriously when they said that Tiffany was missing,” said Kary Ann Deer of Projets Autochtones du Québec. “They thought she was just a young native woman, out getting drunk and slacking on her responsibilities. All the police officers said was ‘She’ll come back.’” 
+            </div>
+            <span class="toggle-description">Read more</span>
+          </article>
         
-        <!-- Podcast sample 1 -->
-        <article class="podcast-grid-item">
-          <span class="featured-tag">Podcast</span>
-          <div class="featured-thumbnail">
-            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIPEhUPEBARFRUVFRUXFRgWFRUVGBcVFhUWFxUVFhUYHSggGB0lHRUXITEhJikrLi4uFyA2ODMsNygtLisBCgoKDg0OGxAQGi0mHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBEQACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAAAQIDBAUGBwj/xABGEAABAwIDBgIECQkHBQAAAAABAAIDBBEFEiEGBxMxQVFhcSIygZEUNUJzobGys8EIFSM0UnKC0eEkM1RjdJKiFmKT4vH/xAAbAQEAAgMBAQAAAAAAAAAAAAAAAQQDBQYCB//EADMRAQACAgEDAwMBBwMFAQAAAAABAgMEEQUhMRITQSIyUXEGFCMzYYGRFVKhNEJiY/AW/9oADAMBADrawingbox24AEAEAEAEAEAEAEAEBB1EIsglEiCLIhIQSiUFEIsgWQEBB22KYVh1HQ0k0jJpKmpjDywSlrWt6uPtsAAsFb3taY+IHQbu9h6DFoJJ3RzR5JTHYSuN7Ma6+v7yxZc1qTwnhzm19BQ4fWSUnwaV7WZfS47g4gi+nS6zY5venqJZ9fgWGxVOHGJkstPWsuQ6VzXNdna0ajtexavFb3mLc/A67epsrRUOFvdTU0bHcSEZgPS1kaD6XPULFr5LTfvI8RV8FAICmI5BQIKIQgqRIgICAgICAgICAgICAgIIsiCyC/VVb5cpe4nKxrG+DW8gPeoiIge4bgP1Kf/Un7qJa/a+56h5xvc+Naj+D7IVrX+yES1OzVS91TRxOcS2OoaWD9niPYX28CWg+d+6934isj3TfHFG7DXcWRzGCWIuLW53H0xZrW3AJJsNSAqGvP1pcLu8wPBsUMlMKSqbJGwOzyTG7gTa9mEBp8ALLPlvkp35HIbfbKnC6v4MxzpGPDXwkj0iHEtyEAauBFtOdx3WbDf119UodFWbAw4XQGvxHNLMcoZTseWNa53IPe30iR1tp5814jNN7emv+RTsZszR43HPHHG6lqIg1zXNe+SNzX3y5mPPdpBsQoy5LY+PwOExSgkpZn08zcskbi1w5i46g9QRYjwKsVmJjkYtl6QWQSiRAQEBAQEBAQEBAQEBAQEEJIIh7vuA/Up/9Sfuolrtr7v7PUPON7nxrUfwfZCta/wTkIlo9lf12m+fi+2Fky/bKHuu+74qk+dg+9aqGt/MenCbgv12f5gfbVja+2B1m1VM2XaDDg+1mxSPt3c3Nl9xsfYsNJ4w2FzfgyN1JCJZnRt43NsXFucpsLZ2281Gt944XdxtRQYPJNI+aom4rWNAbThlspcbm8hv630LPnx2vxwOd3g43DiFc+qp2vaxzWD0wAS5oIJIBPh7lmxUmleJQ51ZBKAgICAgICAgICAgICAgICCm6ISCgmyke+7iqKSKhl4sb2Z6hzm52lpLeHG29jra7StbtTE37PUPON8NFI3EppHRvDHBha4tOU+iBo7lfwVrWtHoRLQbHU75K6maxrnHjRmwBNgHAkm3IL3ln6JHuu+iBz8KlDGucQ+EkAE6CRpJ06AKhrT/EhLhNwUDvhU8mV2XggZrHLfNyvyurG1P0xA2W96vkocToa9rHFsTTfTR3pWezNyBLXG3sXnXiLY5iR1209DDtBh1qWVhJyyRO7PGuR45t6grDSZxX7jxl27bEmk8SBsbW+tI+RgjA6ku7K7+8U/I5uvhjZI5kUnEa02D7ZQ4jmWjnlve1+Y1WWJ57oY6kEEoCAgICAgICAgIIUgomYjyVra0/THLJhw+V/qsd5nT61Uy72HH5sv4embGX7a/5Z0WASH1ntHlqtfk63jj7Y5bTD+zee33zwu/9Pf5p/w3fssP+uT/ALP+Vv8/Lf+z/hol0LkAIKgUSy/zpUf4if/AMj/AOa8+iv4FueulkGWSWR47Oe5w9xKmKxHgW4JnxnNG9zT3aS0+8JMRPlC+/E5yCDUTEHmDI8g+Yuo9FfwlbgrZYxaOWRg52a9zRfyBUzWs+YQT1ssgtJLI8dnPc4fSUilY8QK8PxKemOaCaSI92OLfqUWrFvMJXsRx2qqRaoqZpR2e9xHuUVpWPEDXr2F0BBKAgICAgICAghBepqV8psxpP1e9V8+1iwxzeVrW0s2efohuKbZ/rI72N/mtHn63PP8OHR6n7OfOaf8NpBRRx+oxo8eZ95Wqy7ubJ5s6DB03Xw/bWGQFVmZle4gUcJLIOGX0R8jEEtaSQACSSAABcknkABzPgnI6o7A1MUIqaySCkjPq8Z3pk9gxut1ijPXnisDDodmBVP4VJW08sh9Vjg+EuPZpeNT4KZy+nvaBqcRoJaaR0E7CyRhs5ptcdei91tFo5gYy9AoEIKnNItcEXAIuCLg8iO48UEICCCg9E2U3Uy18Taj4ZAIndY7yHQ2IvoLjUKtl2IrPHCeHEYzRCmqJacOzcN7mZrWvbrborFZ5iJQw1IICAgIJDCQSASBa5ANhflc9L2PuQVQQOkOVguVhzZ6Yq+q8s+DXyZ7emkN9RYC0WMpzHsOXt7rndvrNrfTj7Q6zR/Z+lPqzd5/DcMYG6AADwWltkteebTy6THipSOKxwkryyIUJFIICDhbr6I+RCJe1bkNkYxH+c5mB0ji5sFxfI0aOeB+0eV+3mVQ2sk8+mEuF3sY2+rxCVuYmOE8KMdNPWPmT9Ssa9PTUclTzOjc2Rji1zSHNI5hwNwQs0xz5Q3ON4hLi1XxWQuMsojbkbqXPawNcR4EgleKxGOvcZ1dsNLSujjrKmmp3y6sY5znG17XdYWbrovEZon7YGPtVsVWYZZ1RG0xuNmyMOZt+gPVp89PFeqZoucOh3Z7v2Yi/jzzROhjLc8bHEucSLhrzYZR3ssebPNe0CnevhI/OEzmTUkbWRxgRl5a8BsYs1rA2w8Bfsp17fR3HLbN7L1WJOLKWLNltme45WNvyu7v4C5WS+StPuG2w/YKSplkpYKykknivmjzOGrTldZxGtjoV5nPERzMTwOcxfC5qOV1PURlkjeYPY8nA9Qe6yVvW0cwPftyPxVH87P965a/Z+9MPJ5tlqjEq+rbTOgL2zSEsfJkflzesBlNxrZW4yRWkTIxNo9hqvDoxLVGnaHGzQJS5zja9mjLrovdMtbz2GswDBJa6TgwvhD7EgSPLLgC5sbHkF6teK+UMjC9lqmqmfBT8OThaySNf+hYLc3SED6uhXm2Wte8jIo9lBPL8HgrqR8pNmtu5rXO7NeRYnTspnLMRzMdhYpNl5pKs0Ej4YZRI2MiR/ynWtlyg5tCPf0UTk4r6oHq202wsNHhTaSJ7GudPG6WV+hkcA7rY+wLV59ycf1yuaet7+X0cf4cMyhbT/o2ZD4tNwfbbVc3s7F8t+bTy+gaOtixY49NeP18q1WXxSIIQRZQClJdTETPh5tetfMqeK39pvvC9+1f8Mf7xi/3OGX0B8oLoPqPdwAMMo8vLgtWpzffL0+bdov1upv/AIif719ls8f2x+iGAvY6jdxtHFhlYKidjnNLHNu0Xc29tQPZZYs2Ob14gTt7jLsbrHzUsEz2tjbExrWOe6zS91y1oNrl7l5w0jHHFh7bttTcXB5myDUUwOo1Dw0G/gQVRpPGTt+UuS/J5/uav52P7srNt/dCHEb4Pjao8ovumKxq/YN1u/3j0+F0LqeSKQyhz3NLQLPLuWZ3ybeKx5cM3tz8Ja/c5SzuxSGo4UxjImL5OG/h+nE86vtl1dbrzU7Ex6OIQ6P8oOmaHUk1vSIlYT4DKR9ZWPUme8JdTuR+Ko/nZ/vXLHs/eiHkbcaNBjL6oE2ZUyB/zbnEP+j6la9HqxcJewb2cGFfhrpIxmdFaeO2pIA9IDzaT9Cqa9vTfhLxDAH8Cnqa2/pZRTwn/MmvmI8mNJ/+q9aIm0RKHrO5mjhnwmSHTNJJMya1s3pCzf8AiRb2qps2mMnI4vHN0mIUpMlK4TtaQ5pY7hyjLq02OhcLDUHn0WeuzW0cSMbZyGapxWOtqmlkjqmNzmlpaQ9pa03aRdvq8lQ2eoVpaMNG1wdLtbXtnt4iOz1vekP7GPnmfU5UOofylj9n++5/aXk1loHeQIkQQSvUQiZiI5lhVeKRR6E3PYfzWx1+mZsvfjiGq2+sYMHbnmf6NRU4692jAG/SVucPRsde955c7s/tFmv2x9mtmqHv9d7j5nT3cls6a+PHHFYaXLu5sv32lZyrJ7dfwwe5b8ymy9vCCEHvG47aZk1N+b3uAlguWA/KiJ0Le+W9j7O61+1Ti3qTDzDeZhLqTEZ2lpDZHcVh7tfqT77q1gt6qRwly5WZD1TYDd7E+tfHWenwIKaV0Z5GSdpdlPdrcp94VPNln081Gr3y4pKyqfh0RMVNFGzJFH6DHFzMxcWttm1NtdPR73XvWiJr6p8peubT/E8o7Uo+wFSrP8T+6XGfk8n9DV/Ox/YKz7nmHlxO+D42qPKL7pqz688Y4Hom7PZKmgoG4g6Fs1Q+N0jcwDstgcrGA6A6c+eqrZctrW45S4fdjjE9djUE9RK+RxEzjcktaDC8ANbyYNbWCz56RXH2Q6b8oU+jR/vTfZYsep5kdLuQ+Ko/nZ/vXLHs/emHhe1v67Uj/Pk+0Vfx96QPbtzWOCtw/CDSG76c8J3jEReMn2Xb/AVQ2Kem/I8l3gUrKOYYbE4ObA6SR5HWWd1wD+7E2JvvVzFPq+qUMfBK6twuOPEKZ+WOZ74+7HOjOrZG+RuOuhU2rS8zWfKXrmwO8eSuc2KqgawvNmPYTZxA6tPLtzK1GfJSmX26zyv06flnBOfjsr2whY3FKRzQMznMz28HgNJ+n3LW7HEbFW26fe86GWs+Gz3pH+xj55n1OWbqH8pX/Z//rP7S8nWhd3E/gQ5YlfiDIR6R16Ac/6K9qaGTYnt4a/d6nh1o+qe/CHO12LSS6Xyt7D8Sul1em4sMd+8uN3OsZtjtE8Q162URw1FpmZ5SpCyILIJRIguUlS+F7ZYnuY9hu1zTYg+BSYifI6/Edvvh8TYcSpI5yz1JWOMUg76jRYIwemeaynlqKTFaSne2WKjc97TdvGlu0OBuDlaBmt2KyWrMxxyhn4fvArIa1+Iksc+RoZI22VjmN9Vthyt3XicFZr6Rudot6JqgHMoadkwFmzOAkewf8AZceOl+S801/T8ivCN708VMKaop46ghuTO9x9NvIcQW100J6rzbVrM8xPCeWg2b24noKqSqhjiDZT6cIBbHYeqG25W79VlyYYvWIn4Ry2G0+8Bla/jtw+BlQG5RM673tA5Fo5XF9CeS80wen5FexW86fDIhTOibNE2+S5LXMv0B6i6jJrxeeeRYrt4spnbPSU8FKGvzubG0XlPaVwGosTpy681MYI44meRm7Vb0HYhBwH0MAcRo9xLywkWcWAjQ26qMetFJ55So2e3p3TYfA2lp6OAMZfm95JJN3OOnMk3S+tFp5mTlyOO4l8MnfUCFsZkJc5rC5wLjzcL8vJZq09MccodFunx40NY5xvw3QycXwbGMwcfI/WsWxT11HLYpXuqZpKh980r3PP8RvZZaV4rEEzw6nZLGnGmfh81PFLS5i/XM17XuN7teOui1XUtmuvPMT3bXpnTb7U8+IdFhmKRUrhJBTjO31C9xIb0uG252XNxtcW9fHd1l+n3y4/atfiv4hg1mISyymeR5Mlwc3Yg3bYdLKvbLa1vVM913Dp48eL2qx2dPU7dmeHg1FLHJe19SASORt0KvTv+qvFqtPXoPtZPXiyTDlKyo4rr5WtAFmtaLADt/VU739c+G818XtV4mefzLQYtjAZdkdi7qeYH9Vt9Dpc5Ji+TtDRdU61XFzjxd5/LnHvLiSSSTzJXUY6RjjisOOyZLZLeq3eUFepY0IJCCUBBTdEJBQSiRSIUCUEFAAQSgICCLIFkBB3e6XaSiw+ac1wsJGxiOThmTJlL87SGgkZszdQPkqvs0tbj0i1t/j2HySSHC2OHHDRPJldG0gG+SONwBGY2zGwva3Uphpfj6hx9JTulcGN5n6B1Knaz1w09crGpr22MkUiHZ0dM2JoY3kPpPUrhtnYtnvNrPo2pq118UUqv2VdaQQgiyk+GhxvFrXijOvynDp4BdF0vpvqn3MjlesdYisThxT+sueK6SIiHIz3nmUqQQEAIJQEFKIAgqRIgICAgICAgICAgIIspBRM8Qmsczw6zAcP4TM7h6bvob0C4/q277uT0V8Q7novT/Yx+u3mW0C07fJQEGnx7EuEMjD6R/wI7+a3XS9GctvXbxDn+s9TjDX2qfdLlr3XWRERHEOImeZ5kUoFIICAEEoCAgICAgICAgICAgICAgICDa7P0HFfncPRZ9Lug/Fafq277OP0R5lu+i6PvZfXbxDrLLj7TzPLu4jiOIRZQkspSxcRqxCwvOp6DuVb0tW2xkisKG/uV1sU2nz8OJmlL3F7jck3K7nFirjpFYfO8+W2W83t5QFkYkoCAgICAgIIuiBBKJEBAQEBAQEBAQEBBXBEXuDGi5JsFjzZIx0m0suHFbJeK1+XcUNIIWBg6cz3PUrg9vYnPkm0vomlrxr4opC/ZVl4QQTbmvVazaeIebWiscy4zGK/jvJHqt0b+J9q7TpupGDH/WXz7qu9OzmnjxDAWz55apKJEBAQEBAQEFKIAgqRIgICAgICAgICAghSOl2Ww+wM7hqdGeXU+1cv1re9U+zSf1dZ0LR7e9aP0dCVzjp0EKXpCJaPaWvyN4Tebufg3+q3vRtL3Le5bxDnOu7/ALdParPeXLFdZPDjJEQqRIgICAgICAgiyILIJRIgICAgICAgICAgzMJoDUSBnyRq49h/VUeobUa+KbfPwv8AT9SdjNFfj5dwxgaA0CwGgC4S95vabT8voOOkY6xWvwqsvL2iylKzV1AiYXu5Ae89ArGtgnNkisMGzsRgxzezg6qd0jy9x1J93gF3uDDXDSKVfOdrPObJN7fK3ZZVcsglEiAgICAgICAgICAgICAgICAgICAASbAXJ0HmotaKxMymlZtaKw7jBcPFPHb5R1cfHt7Fw3UtydjJP4h33TdKNfFH5lnrWtmIkKmDlyO0+IZ3cFvqt5+Lv6Lr+jaft4/ct5lxnXN+cl/arPaGkW7c6kKUwlEiAgICAgICAgi6IAUEokQEBAQEBAQEEIOk2Vw25+EPHLRgPfq5c31rf4/g0n9XS9E6fzPvXj9HTELlpl1iLIkRDW47iHAj09Z2jfxK2nS9OdjJ/SGr6puxrYv6y4hy7iK+mIiHB2mbTMyhS8pCJEEoCAgICAgICClEAQVIkQEBAQEBAQEGwwTDDUSW1yDVx/AeJWt6lvV1sf8A5T4bDp2lOxkjnxHl3TYw0WAsBoB4LhsmSb2m0u9x0ilYrXwlY3vlFlKVuaQMaXOIAAuT5LLhxzktFYY82WuKk3t8ODxOtM8hkPLk0dmjku80dSNfFFXAb23Oxlm/wxCrqihACCUEoCAgICAgICCEBBKAgICAgICAgycOoX1Dwxg8z0A7lVdvbx69PVZa1NS+xeK1d9QUbYGCNg0HPuT1JXB7e1fYv6rO61dWmvSK1Xyqq0ghSlCmO5y5LanE854DD6I9Yjqe3kF13RtD0V9y8d3I9Z6j7lvar4hzy6BzwglAQEEoCAgICAgICCEQIlKAgICAgICHDOwvCpKl1mCzeryNB5dz4Kjub+PXrzM9/AL2poZNi3ER2/LuMPoGU7cjB5nqT3K4fa277F/VZ2epqU168VZSqrgiUEINJtHi3AbkZ67h/tHdbzpGhOa/rt9sNN1fqEYaeis/VLi12fHHaHF2tNp5lSpQBBKAgIJQEBAQEBAQEFKIAgqRIgKQUHAkzwmImWTSYfLMbRxuPjyHvKqZt7Dhj6rLWHSzZZ+mrosN2WaLOndmP7LeXtPVc9t9dm3bE32r0OInnLLpYow0BrQAByA0C53JltktzaeW+x460jisKiF4ZFJCcpETywMYxNtMzMdXHRre57+Xitl0/Rts34jwob+9XWx8/Lgqmd0ji95uSbldzgwVxUilfhw2bNbLeb2W1mYkICBdOfg4nylAQEBAQEBAQEBBd+Bv/ZKvf6fm/Cx+6ZPwqFDJ+z9IXidLLHwn90yfhcbhsh6D3hY517x5ZK6GWV1uDSHq0e0/gFgt2Zq9Ky2+YZEWzzjzkaPJpP4hVMuzFfhZx9EvP3WZ0Gzkfynvd7gFrM3U8keIX8fQsUR9Uy2lLhMMerY237nU/StLsb+e/mzZ4em62PxVsWaaLVXtNu8r0UiO0Lq8JSFCFSgQpGBi+JspmZnG7j6rRzP8h4q/o6GTZt28KG7vY9enfy4KvrHzvMjzr0HQDsF3Wrq0wUilXFbOzfPebWWFZVxARDNwmgM78t7NGrz2aOftVHe2vYp28z4XNLW9+/fxHlcxatY+0UMYbGw+ierjbmSvGjivX68lubT8fhk3M1L/TjrxWGKaOUM4vCk4d7Z8jsl/wB61lfiY8KCyBfQak8gOp7BT8C9UUkkd+JG9ljY5mltja9jfrYg2XmLQLTWEguAJDbZiASBc2Fz01IHmV6FKC9LTPY1kjmkNkzFh/aDHZXEeR0SJ58Cyp4BRyCAg34Xb2jh0sSrBVXJEskQvMWuzMtWQ1afPCzDIYtLsLFZZEZWmzVWar7FrctWWF1qpzHCVwLwKgo4RKpRETM8Q88tHjW0LIbtjs+T/iPPv5LeaHR75pi1+0NLvdWpi+mneXF1NQ+Vxe9xJPX+S7HDr0w19NIcpmz3y29VpW1mYBEiDOw/C5JwSzLYGxJdaypbO7XBMRaJ5XNfTtmjmJhspGthYKKJ4dJK4CV45AE8h5LWR68152Lx2jxDYT7eGkYKT9U+ZYu0M7Wn4NE0BkR58yXWsST1Vrp2O8xOa/mVPqGWnq9rH4j/AJdrTwSVFEzjyS00Qp4I3PZJG+mlh4rQQYzrHOASTa/qq3MemzXr1DhUMFTG99BBBw6+nipiZZH8aJ0oBkP6T0nNADw/Qa2IKi02mPPwLNBMzEoMk1PC2M4llme182ZjCxoEmaSU2LjZl7EWOgBF0tE1nmPwMMg0tPXPnwqGAcCHLFxJSyW1bFlLv0hccpyk2Lc1unSe8zEc/wD3AzJ9nKZrs9NRMqTJJGJI3Svy08L4o3FzLPadXOf6ZJtltbVRFr8TzIol2dpGt/s8baqRkdSYYnSOyyltZw9crgTkZc5QRmtc91MXtyK8P2bpXRcSajAc584qGNMr3Uwb/dsicJQGaWfd2a+e2lrJNrc8cjzV1rm17XNr8yL6EqyIUgg367m0OkjyrCqXZYXo1rczLC+1anMs1X2FabYhYqyI1p80LFV9hWsywywutKpXh6hdBWPjnwiZ48sCuxyCG93Zj2bqf5BbHW6XnzT44hrdjqmHD88y5fE9opZtG+g3sOZ83fgun0+j4cPe3eXN7fV8ub6a9oaa620ViGonmUr0CAgIJznlcrzalbcTMJi9ojiJQCpmInzBFpgOuqcRHhE905jbLc27XNvco+RJkcbXc7TlqdPLsoivAjMddSL89efn3U8QJfI53rOcfMk6A3AU8QIEjtSHOFxY2JFx2NuY8FHHwDHkWIJFuViRbytyTjuKhK7X0nel62p189dVPEChAQEG/XcTLpI8qwqt2WF5i1uZkrMLzAtVlZq2j8rvFaObgPMgLUZ6zPiGaM9I82g/OUTecjfff6lr76uS3iCeoYKeZWX7Qwt5ZneQ/ErB/pWW3lXv1vBXwwqjal3KOMDxcb/QFYx9Bp5tPP8ARQz9eyT/AC44/q1VVik0uj5HW7CzR7ha/tWyxdPwYvFWpzdQz5vNmIrkcRHEKc8zPMhXrkQglAQEBBCIAhCUSKAQSghBCAEEoAQSgIN8u3l0keVYVa7ItyrW5nm/hgTLU5WC7XHr5KtRrs6WrNCjPlAXifJKV6jyf9qUyeXjH4FjZAr1BKFKEoCAgIIRAEISiRQCCUEIIQAglACCUBB//9k=" alt="The CATYLIST">
-          </div>
-          <h3>The Catalyst</h3>
-          <div class="featured-description">
-            Producer on the bi-weekly podcast The Catalyst by Softchoice - a podcast that shines a light on the human side of innovation. 
-          </div>
-          <div class="audio-player">
-            <audio controls>
-              <source src="https://drive.google.com/uc?export=download&id=1SIpz1VgX37KPGRC-iWsRfGD00cFDqgIE" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-            <span class="audio-label">Listen to a sample</span>
-          </div>
-          <a href="post-the-catalyst.html" class="podcast-link">View Details</a>
-        </article>
+
+
+                  <article class="featured-item" data-link="post-monkey-onsen.html">
+            <span class="featured-tag">Article</span>
+            <div class="featured-thumbnail">
+              <img src="https://www.theglobeandmail.com/resizer/NrUYrvZGpf5dtQwVvf8BZGzlxmg=/480x0/filters:quality(80)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/HKXXD5GPVNDBLGZGNHLJHXCPGA" alt="monkey onsen">
+            </div>
+            <h3>How I ended up naked, with a monkey, in a hot tub</h3>
+            <div class="featured-description description-truncated">
+
+"Hadaka no tsukiai" is the Japanese phrase for "naked companionship," the bonding that occurs in public baths. In the nude, there is nothing to hide and status means nothing; onsen, or hot springs, may be the most relaxed and uninhibited places in Japan. And here I was baring it all. To a monkey.
+              
+         </div>
+            <span class="toggle-description">Read more</span>
+          </article>
+
+
+			           <article class="featured-item" data-link="post-fisheries-paris-agreement.html">
+            <span class="featured-tag">Article</span>
+            <div class="featured-thumbnail">
+              <img src="https://images.unsplash.com/photo-1493855344473-0378f32bd0d4?auto=format&fit=crop&q=80&w=870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Climate Change fisheries">
+            </div>
+            <h3>Large benefits to marine fisheries of meeting the 1.5°C global warming target</h3>
+            <div class="featured-description description-truncated">
+             Meeting the Paris Agreement global warming target of 1.5°C will have large benefits to fisheries, finds a new Nippon Foundation-Nereus Program study published in Science. For every degree Celsius decrease in global warming, potential fish catches could increase by more than three million tonnes per year.
+            </div>
+            <span class="toggle-description">Read more</span>
+          </article>
+
+         
+         
+ <article class="featured-item" data-link="post-15-best-movie-podcasts-for-cinematic-and-tv-series-fans.html">
+            <span class="featured-tag">Article</span>
+            <div class="featured-thumbnail">
+              <img src="https://raw.githubusercontent.com/LindsayLafreniere/LindsayLafreniere.github.io/main/photos/TV%20and%20movie%20podcasts.png" alt="15+ Best Movie Podcasts">
+            </div>
+            <h3>15+ Best Movie Podcasts for Cinematic and TV Series Fans</h3>
+            <div class="featured-description description-truncated">
+              Ever watch a really great movie and then want to instantly know what other people are thinking and saying about it? Movie podcasts have blossomed in popularity.
+            </div>
+            <span class="toggle-description">Read more</span>
+          </article>
+          
+         
+ <article class="featured-item" data-link="post-saas-sprawl.html">
+            <span class="featured-tag">Article</span>
+            <div class="featured-thumbnail">
+              <img src="https://images.unsplash.com/photo-1590971862391-06cac0657603?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="saas sprawl">
+            </div>
+            <h3>How to Take Control of Enterprise SaaS Sprawl</h3>
+            <div class="featured-description description-truncated">
+SaaS tools have revolutionized how businesses and individuals access software applications, with their ease of use, scalability, flexibility, and cost-effectiveness. Simply put: They’re powerful productivity drivers. But the reality of having a distributed workforce with access to thousands of apps at their fingertips is also causing a staggering growth of "SaaS sprawl" and Shadow IT. 
+            </div>
+            <span class="toggle-description">Read more</span>
+          </article>
+
+
+
+
+          
+        </div>
+      </div>
+      <div class="featured-dots" id="featured-dots"></div>
+      <div class="cta-container fade-in">
+        <a href="writing.html" class="cta-button">View More</a>
+      </div>
+    </div>
+  </section>
+  
+  <section class="podcasts-section" id="podcasts">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="reveal-text">Podcasts</h2>
+      </div>
+      <div class="featured-container" id="podcast-slider">
+        <div class="slider-nav">
+          <button class="slider-button prev" aria-label="Previous slide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M15 19l-7-7 7-7"></path>
+            </svg>
+          </button>
+          <button class="slider-button next" aria-label="Next slide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="featured-wrapper">
+			
+          <!-- Podcast sample 1 -->
+          <article class="featured-item" data-link="post-the-catalyst.html">
+            <span class="featured-tag">Podcast</span>
+            <div class="featured-thumbnail">
+              <img src="data:image/jpeg;base64,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" alt="The CATYLIST">
+            </div>
+            <h3>The Catalyst</h3>
+            <div class="featured-description description-truncated">
+              Producer on the bi-weekly podcast The Catalyst by Softchoice - a podcast that shines a light on the human side of innovation. 
+            </div>
+			  <a href="post-the-catalyst.html" class="toggle-description">Read more</a>
+ 
+          </article>
+          
+          <!-- Podcast sample 2 -->
+          <article class="featured-item" data-link="post-innovation-heroes.html">
+            <span class="featured-tag">Podcast</span>
+            <div class="featured-thumbnail">
+              <img src="https://raw.githubusercontent.com/LindsayLafreniere/LindsayLafreniere.github.io/main/photos/SHI%20Innovation%20Heroes%20podcast%20cover%20art.png" alt="Innovation Heros">
+            </div>
+            <h3>Innovation Heroes</h3>
+            <div class="featured-description description-truncated">
+              Producer for SHI's Innovation Heroes, this podcast explores the people and business driving change in our disruptive world.
+            </div>
         
-        <!-- Podcast sample 2 -->
-        <article class="podcast-grid-item">
-          <span class="featured-tag">Podcast</span>
-          <div class="featured-thumbnail">
-            <img src="https://raw.githubusercontent.com/LindsayLafreniere/LindsayLafreniere.github.io/main/photos/SHI%20Innovation%20Heroes%20podcast%20cover%20art.png" alt="Innovation Heroes">
+			   <a href="post-innovation-heroes.html" class="toggle-description">Read more</a>
+          </article>
+         
+		 <!-- Podcast sample 3 -->
+          <article class="featured-item" data-link="post-talk-it-forward.html">
+            <span class="featured-tag">Podcast</span>
+            <div class="featured-thumbnail">
+              <img src="https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/de/db/ac/dedbac1a-7ce9-4724-526b-98fe77a7026f/mza_2099447345390044738.jpg/300x300bb.webp" alt="Talk it Forward">
+            </div>
+            <h3>Talk it Forward</h3>
+            <div class="featured-description description-truncated">
+              Producer of the podcast "Talk it Forward" sponsored by the Vancouver Board of Parks and Recreation. The first season explores challenges in the workplace.
+            </div>
+    
+			   <a href="post-talk-it-forward.html" class="toggle-description">Read more</a>
+          </article>
+          
+          <!-- Podcast sample 4 -->
+          <article class="featured-item" data-link="post-success-podcasts.html">
+            <span class="featured-tag">Podcast</span>
+            <div class="featured-thumbnail">
+              <img src="data:image/png;base64,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"
+			  
+			  alt="SUCCESS Magazine">
+            </div>
+            <h3>SUCCESS Magazine Podcast Network</h3>
+            <div class="featured-description description-truncated">
+              Post-production support on five weekly SUCCCESS magazine podcasts. This included quality control checks, suggesting edits, flagging content issues, and writing titles, descriptions, and blog posts.
+            </div>
+ <a href="post-success-podcasts.html" class="toggle-description">Read more</a>
+			  
+          </article></div>
+      </div>
+      <div class="featured-dots" id="podcast-dots"></div>
+      <div class="cta-container fade-in">
+        <a href="podcasts.html" class="cta-button">View More</a>
+      </div>
+    </div>
+  </section>
+
+	<section class="writing-section" id="research">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="reveal-text">Research & Reports</h2>
+      </div>
+      <div class="featured-container" id="featured-slider">
+        <div class="slider-nav">
+          <button class="slider-button prev" aria-label="Previous slide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M15 19l-7-7 7-7"></path>
+            </svg>
+          </button>
+          <button class="slider-button next" aria-label="Next slide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="featured-wrapper">
+
+          
+          <!-- Reports sample 1 -->
+			
+          <article class="featured-item" data-link="post-fifth-estate.html">
+            <span class="featured-tag">Research & Reports</span>
+            <div class="featured-thumbnail">
+              <img src="https://raw.githubusercontent.com/LindsayLafreniere/LindsayLafreniere.github.io/refs/heads/main/photos/FifthEstateEnemiesoftheState.png" alt="Fifth Estate Enemies of the State">
+            </div>
+            <h3>
+CBC The Fifth Estate - Enemies of the State (S36E04)</h3>
+            <div class="featured-description description-truncated">
+           Researcher on the CBC's investigative reporting documentary series on an episode about a Cold-War plan to intern suspected Communists in Canada. 
+			
+			</div>
+            <span class="toggle-description">Read more</span>
+          </article>
+
+
+			
+          <article class="featured-item" data-link="post-AI-art-Beth-Frey.html">
+            <span class="featured-tag">Research & Reports</span>
+            <div class="featured-thumbnail">
+              <img src="https://raw.githubusercontent.com/LindsayLafreniere/LindsayLafreniere.github.io/refs/heads/main/photos/UNSDGreportOceansgoals.png">
+            </div>
+            <h3>
+United Nations Sustainable Development Goals: Oceans and SDGs - Co-Benefits, Climate Change & Social Equity</h3>
+            <div class="featured-description description-truncated">
+         Editor, layout and design of Nippon Foundation - Nereus Program report presented at the UN Oceans Conference 2017. 
+			</div>
+            <span class="toggle-description">Read more</span>
+          </article>
+			
+			
+
+		
+
+          
+ 
+          
+        </div>
+      </div>
+      <div class="featured-dots" id="featured-dots"></div>
+      <div class="cta-container fade-in">
+        <a href="writing.html" class="cta-button">View More</a>
+      </div>
+    </div>
+
+<!-- Testimonials Section -->
+  <section class="podcasts-section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="reveal-text">Testimonials</h2>
+      </div>
+      <div class="featured-wrapper fade-in" style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; transform: none;">
+        
+        <!-- Testimonial 1: Jennifer Moss -->
+        <article class="featured-item" style="flex: 1 1 300px; max-width: 550px; cursor: default; display: flex; flex-direction: column; align-items: flex-start;">
+          
+          <span class="featured-tag" style="display: inline-block; width: auto; align-self: flex-start; margin-bottom: 1rem;">Recommendation</span>
+          
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; width: 100%;">
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQH6YaiXMBRdjw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1720038863540?e=1792627200&amp;v=beta&amp;t=Sfat4DaLCfkgLAXGbhDAHHT163_bAEmD2sjdbMg6jhI" alt="Jennifer Moss" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
+            <div>
+              <h3 style="margin: 0; font-size: 1.25rem;">
+                <a href="https://www.linkedin.com/in/jennifer-moss-8a356930/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recommendations_details%3BGJpprIkESKu1myzeyku4MQ%3D%3D" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Jennifer Moss</a>
+              </h3>
+              <p style="font-size: 0.85rem; opacity: 0.8; margin: 0.25rem 0 0 0;">Co-founder / Chief Creative Officer at JAR Podcast Solutions</p>
+            </div>
           </div>
-          <h3>Innovation Heroes</h3>
-          <div class="featured-description">
-            Producer for SHI's Innovation Heroes, this podcast explores the people and business driving change in our disruptive world.
+
+          <div style="display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; overflow: hidden; max-height: none; margin-bottom: 1rem; width: 100%;">
+            <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">“Lindsay Lafreniere is a diligent, intelligent, and dedicated producer and writer. She is open to new ideas, and a great team player. When she worked with us at JAR Audio, Lindsay co-created a groundbreaking podcast about women in the workforce for the Equity, Diversity, and Inclusion Office at the City of Vancouver, B.C. We relied on her emotional intelligence and ability to find and pre-interview appropriate guests, and then write focused interview questions and narrative podcast scripts. She also directed the host and guests during recordings. Feedback about the show was universally positive, and Lindsay made the host (a first-time podcaster) feel comfortable and supported. If you're looking for a great creative collaborator -- Lindsay's an excellent choice!”</p>
           </div>
-          <div class="audio-player">
-            <audio controls>
-              <source src="https://drive.google.com/uc?export=download&id=1SIpz1VgX37KPGRC-iWsRfGD00cFDqgIE" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-            <span class="audio-label">Listen to a sample</span>
+          
+          <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-top: auto; padding-top: 0.75rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+            <span class="toggle-description" onclick="const desc = this.parentElement.previousElementSibling; if (desc.style.webkitLineClamp === 'none') { desc.style.display = '-webkit-box'; desc.style.webkitLineClamp = '6'; this.textContent = 'Read more'; } else { desc.style.display = 'block'; desc.style.webkitLineClamp = 'none'; this.textContent = 'Read less'; }" style="cursor: pointer; font-weight: 600;">Read more</span>
+            <a href="https://www.linkedin.com/in/jennifer-moss-8a356930/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recommendations_details%3BGJpprIkESKu1myzeyku4MQ%3D%3D" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; font-weight: 600; color: inherit; text-decoration: underline; display: inline-flex; align-items: center; gap: 0.35rem;">
+              View on LinkedIn
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
           </div>
-          <a href="post-innovation-heroes.html" class="podcast-link">View Details</a>
+
         </article>
 
-        <!-- Podcast sample 3 -->
-        <article class="podcast-grid-item">
-          <span class="featured-tag">Podcast</span>
-          <div class="featured-thumbnail">
-            <img src="https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/de/db/ac/dedbac1a-7ce9-4724-526b-98fe77a7026f/mza_2099447345390044738.jpg/300x300bb.webp" alt="Talk it Forward">
+        <!-- Testimonial 2: Gino Maulucci -->
+        <article class="featured-item" style="flex: 1 1 300px; max-width: 550px; cursor: default; display: flex; flex-direction: column; align-items: flex-start;">
+          
+          <span class="featured-tag" style="display: inline-block; width: auto; align-self: flex-start; margin-bottom: 1rem;">Recommendation</span>
+          
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; width: 100%;">
+            <img src="https://media.licdn.com/dms/image/v2/C5603AQH5gKlP8sC16A/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1653104274920?e=1792627200&amp;v=beta&amp;t=vOKzmVgi9t9IGQAuQS1zNgMWLXVL2JgbiVV52bb45XQ" alt="Gino Maulucci" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
+            <div>
+              <h3 style="margin: 0; font-size: 1.25rem;">
+                <a href="https://www.linkedin.com/in/ginomaulucci/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recommendations_details%3BGJpprIkESKu1myzeyku4MQ%3D%3D" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Gino Maulucci</a>
+              </h3>
+              <p style="font-size: 0.85rem; opacity: 0.8; margin: 0.25rem 0 0 0;">Digital Marketing Professional</p>
+            </div>
           </div>
-          <h3>Talk it Forward</h3>
-          <div class="featured-description">
-            Producer of the podcast "Talk it Forward" sponsored by the Vancouver Board of Parks and Recreation. The first season explores challenges in the workplace.
-          </div>
-          <div class="audio-player">
-            <audio controls>
-              <source src="https://drive.google.com/uc?export=download&id=1SIpz1VgX37KPGRC-iWsRfGD00cFDqgIE" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-            <span class="audio-label">Listen to a sample</span>
-          </div>
-          <a href="post-talk-it-forward.html" class="podcast-link">View Details</a>
-        </article>
 
-        <!-- Podcast sample 4 -->
-        <article class="podcast-grid-item">
-          <span class="featured-tag">Podcast</span>
-          <div class="featured-thumbnail">
-            <img src="data:image/png;base64,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uMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMuMu" alt="Success Podcasts">
+          <div style="display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; overflow: hidden; max-height: none; margin-bottom: 1rem; width: 100%;">
+            <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">“Lindsay will be a fantastic addition to any organization that needs a hard working, bright, driven, intelligent self starter with superior communication and new media skills (Wordpress, Facebook and Twitter). Lindsay's writing and organizational skills served us well at Tridel and are already deeply missed across many departments- our sales and marketing social media channels, corporate internal communications, customer care and BOLT CSR initiative.”</p>
           </div>
-          <h3>Success Podcasts</h3>
-          <div class="featured-description">
-            Podcast production and audio storytelling highlighting key success stories and industry conversations.
+          
+          <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-top: auto; padding-top: 0.75rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+            <span class="toggle-description" onclick="const desc = this.parentElement.previousElementSibling; if (desc.style.webkitLineClamp === 'none') { desc.style.display = '-webkit-box'; desc.style.webkitLineClamp = '6'; this.textContent = 'Read more'; } else { desc.style.display = 'block'; desc.style.webkitLineClamp = 'none'; this.textContent = 'Read less'; }" style="cursor: pointer; font-weight: 600;">Read more</span>
+            <a href="https://www.linkedin.com/in/ginomaulucci/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recommendations_details%3BGJpprIkESKu1myzeyku4MQ%3D%3D" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; font-weight: 600; color: inherit; text-decoration: underline; display: inline-flex; align-items: center; gap: 0.35rem;">
+              View on LinkedIn
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
           </div>
-          <div class="audio-player">
-            <audio controls>
-              <source src="https://drive.google.com/uc?export=download&id=1SIpz1VgX37KPGRC-iWsRfGD00cFDqgIE" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-            <span class="audio-label">Listen to a sample</span>
-          </div>
-          <a href="post-success-podcasts.html" class="podcast-link">View Details</a>
+
         </article>
 
       </div>
     </div>
   </section>
-
-  <section class="view-all-section">
+		
+  </section>
+  <section class="home-contact-section" id="contact">
     <div class="container">
-      <div class="view-all-button-container fade-in">
-        <a href="https://raindrop.io/LindsayLafreniere/podcast-samples-30039894" target="_blank" rel="noopener noreferrer" class="cta-button">View All My Podcasts</a>
+      <div class="section-header">
+        <h2 class="reveal-text">Get In Touch</h2>
       </div>
+      <div class="home-contact-content fade-in">
+        <p class="home-contact-message">Interested in working with me? Have questions or want a quote? Email me or message on LinkedIn.</p>
+        
+        <div class="home-contact-info">
+          <div class="contact-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <a href="/cdn-cgi/l/email-protection#e488858296818a8d819681ca888d8a8097859da48389858d88ca878b89"><span class="__cf_email__" data-cfemail="7c101d1a0e191215190e1952101512180f1d053c1b111d1510521f1311"> lafreniere . lindsay @ gmail . com </span></a>
+          </div>
+          <div class="contact-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Porto, Portugal </span>
+          </div>
+        </div>
+        
+        <div class="home-contact-buttons">
+          <a href="https://www.linkedin.com/in/lindsay-lafreniere-28588838/" target="_blank" rel="noopener noreferrer" class="cta-button">Connect on LinkedIn</a>
+          <a href="about.html" class="cta-button">Learn More About Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
     </div>
   </section>
 
@@ -142,7 +448,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-logo">
-          <a href="index.html" class="logo">LL</a>
+          <div class="logo">LL</div>
           <p>Lindsay Lafreniere</p>
         </div>
         <div class="footer-links">
@@ -154,10 +460,13 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; Lindsay Lafreniere. All rights reserved.</p>
+        <p> 2025 Lindsay Lafreniere. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="config.js"></script>
+  <script src="script.js"></script>
+  <script src="slider.js"></script>
 </body>
 </html>
