@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cracking the YouTube Code with Derral Eves | Lindsay Lafreniere</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-post.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor-follower"></div>
+  
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">LL</a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="podcasts.html" class="nav-link">Podcasts</a></li>
+          <li><a href="writing.html" class="nav-link active">Writing</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="post-header">
+    <div class="container">
+      <div class="post-meta">
+        <span class="post-category">Business & Branding</span>
+      </div>
+      <h1 class="reveal-text">Cracking the YouTube Code with Derral Eves</h1>
+      <div class="post-publication">Published in <span>SUCCESS Magazine</span></div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="feature-image fade-in">
+      <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1200" alt="YouTube strategy and digital content creation">
+    </div>
+  </div>
+
+  <section class="post-content">
+    <div class="container">
+      <article class="post-article fade-in">
+        <div class="c-wysiwyg wysiwyg section">
+          <div class="rte">
+            <p>“I've generated 87, almost 88 billion video views on YouTube, and a billion of them was just dumb luck… but the rest was strategy,” says top audience development strategist and expert Derral Eves.</p>
+
+            <p>As the mind behind some of the platform's biggest channels and author of <em>The YouTube Formula</em>, Eves has spent years decoding the exact mechanisms that drive audience engagement, click-through rates, and long-term viewer retention. In a conversation on the <em>Brilliant Thoughts</em> podcast with Tristan Ahumada, Eves breaks down how entrepreneurs, creators, and brands can stop guessing and start scaling their presence through purposeful content creation.</p>
+
+            <p>"Successful people are great at selling ideas, products, services, or their skills and expertise," notes Ahumada. But translating that offline value into digital video traction requires a fundamental shift in how creators think about audience psychology and algorithmic behavior.</p>
+
+            <!-- Embedded image inside post -->
+            <div class="post-image half-width fade-in">
+              <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&q=80&w=800" alt="Content creator working on video analytics and strategy">
+              <p class="caption">Understanding viewer data and retention metrics is core to building a sustainable channel strategy. (Image: Unsplash)</p>
+            </div>
+
+            <p>Rather than relying on viral lightning strikes, Eves emphasizes that channel growth is an intentional science. Creators must master packaging—combining compelling thumbnails and magnetic titles—while anchoring every video in a deep understanding of viewer intent. When you solve a real problem or fulfill an explicit emotional need for your target audience, the algorithm naturally responds to the sustained watch time.</p>
+
+            <p>For businesses and independent creators alike, the barrier to entry on YouTube isn't high-end production equipment; it's the willingness to rigorously test, analyze data, and adapt to shifting viewer habits. By treating content as a systematic feedback loop rather than a guessing game, anyone can build meaningful reach and authority on the platform.</p>
+
+            <p>To dive deeper into Derral Eves' insights on audience growth, platform strategies, and his 12-week Channel Jumpstart course, check out the full feature.</p>
+
+            <p><strong>About SUCCESS Magazine</strong></p>
+            <p>SUCCESS is a premier publication dedicated to professional growth, leadership, entrepreneurship, and personal development. Visit <a target="_blank" href="https://www.success.com">success.com</a> for more insights, articles, and podcasts.</p>
+
+            <p><strong>For further information or interview requests, please contact:</strong></p>
+            <p>
+              Lindsay Lafreniere<br>
+              Podcast Producer & Communications Specialist<br>
+              <a href="mailto:l.lafreniere@oceans.ubc.ca">l.lafreniere@oceans.ubc.ca</a>
+            </p>
+          </div>
+
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="post-cta">
+          <a href="https://www.success.com/cracking-the-youtube-code-with-derral-eves" target="_blank" rel="noopener noreferrer" class="link-button">View full article on SUCCESS Magazine</a>
+        </div>
+      </article>
+      
+      <div class="post-navigation fade-in">
+        <a href="writing.html" class="nav-button">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7"></path>
+          </svg>
+          Back to all articles
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo">LL</div>
+          <p>Lindsay Lafreniere</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="podcasts.html">Podcasts</a>
+          <a href="writing.html">Writing</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>2026 Lindsay Lafreniere. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
