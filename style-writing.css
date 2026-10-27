@@ -159,3 +159,35 @@
     font-size: 1.5rem;
   }
 }
+
+/* Slider navigation arrows */
+.slider-arrow {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.slider-arrow:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.slider-arrow.prev {
+  left: -10px;
+}
+
+.slider-arrow.next {
+  right: -10px;
+}
