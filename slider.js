@@ -9,9 +9,26 @@ function initEnhancedSliders() {
   sliderContainers.forEach((container) => {
     const sliderWrapper = container.querySelector('.slider-wrapper');
     const slides = sliderWrapper.querySelectorAll('.writing-item, .featured-item');
-  const dotsContainer = container.querySelector('.slider-dots, .featured-dots');
+    const dotsContainer = container.querySelector('.slider-dots, .featured-dots');
     
     if (!slides.length || !dotsContainer) return;
+    
+    // Clear and dynamically generate dots based on the number of slides
+    dotsContainer.innerHTML = '';
+    slides.forEach((_, index) => {
+      const dot = document.createElement('button');
+      dot.classList.add('slider-dot');
+      if (index === 0) dot.classList.add('active');
+      dot.setAttribute('data-index', index);
+      dot.setAttribute('aria-label', `Go to slide ${index + 1}`);
+      
+      // Allow clicking dots to jump directly to that slide
+      dot.addEventListener('click', () => {
+        goToSlide(sliderWrapper, slides, index, dotsContainer);
+      });
+      
+      dotsContainer.appendChild(dot);
+    });
     
     setupEnhancedTouchControls(container, sliderWrapper, slides, dotsContainer);
     setupKeyboardControls(container, sliderWrapper, slides, dotsContainer);
@@ -22,7 +39,6 @@ function setupEnhancedTouchControls(container, wrapper, slides, dotsContainer) {
   let startX, moveX, startY, moveY, initialOffset;
   let isScrolling = false;
   
-  // Enhanced touch handling with better detection
   container.addEventListener('touchstart', (e) => {
     startX = e.touches[0].clientX;
     startY = e.touches[0].clientY;
@@ -36,7 +52,6 @@ function setupEnhancedTouchControls(container, wrapper, slides, dotsContainer) {
     moveX = e.touches[0].clientX;
     moveY = e.touches[0].clientY;
     
-    // Determine if the user is trying to scroll vertically
     if (!isScrolling) {
       isScrolling = Math.abs(moveY - startY) > Math.abs(moveX - startX);
     }
@@ -60,7 +75,7 @@ function setupEnhancedTouchControls(container, wrapper, slides, dotsContainer) {
     
     const diff = startX - moveX;
     const slideWidth = slides[0].offsetWidth + parseInt(window.getComputedStyle(slides[0]).marginRight);
-    const threshold = slideWidth * 0.2; // 20% of slide width
+    const threshold = slideWidth * 0.2;
     
     const activeDot = dotsContainer.querySelector('.slider-dot.active, .featured-dot.active');
     if (!activeDot) return;
@@ -68,15 +83,14 @@ function setupEnhancedTouchControls(container, wrapper, slides, dotsContainer) {
     const currentIndex = parseInt(activeDot.dataset.index);
     
     if (Math.abs(diff) > threshold) {
-      if (diff > 0) { // swipe left
+      if (diff > 0) {
         const nextIndex = Math.min(currentIndex + 1, slides.length - 1);
         goToSlide(wrapper, slides, nextIndex, dotsContainer);
-      } else { // swipe right
+      } else {
         const prevIndex = Math.max(currentIndex - 1, 0);
         goToSlide(wrapper, slides, prevIndex, dotsContainer);
       }
     } else {
-      // Return to current slide if swipe wasn't far enough
       goToSlide(wrapper, slides, currentIndex, dotsContainer);
     }
     
@@ -87,7 +101,6 @@ function setupEnhancedTouchControls(container, wrapper, slides, dotsContainer) {
 }
 
 function setupKeyboardControls(container, wrapper, slides, dotsContainer) {
-  // Add keyboard navigation when the slider is in focus
   container.tabIndex = 0;
   
   container.addEventListener('keydown', (e) => {
@@ -116,15 +129,15 @@ function goToSlide(sliderWrapper, slides, index, dotsContainer) {
   const slideWidth = slides[0].offsetWidth + parseInt(window.getComputedStyle(slides[0]).marginRight);
   sliderWrapper.style.transform = `translateX(-${index * slideWidth}px)`;
   
-  // Update active dot
   const dots = dotsContainer.querySelectorAll('.slider-dot, .featured-dot');
   dots.forEach(dot => {
     dot.classList.remove('active');
   });
-  dots[index].classList.add('active');
+  if (dots[index]) {
+    dots[index].classList.add('active');
+  }
 }
 
-// Get current translateX value
 function getTranslateX(element) {
   const style = window.getComputedStyle(element);
   const matrix = new WebKitCSSMatrix(style.transform);
