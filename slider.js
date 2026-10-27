@@ -1,4 +1,4 @@
-// New slider functionality for better swipability
+// New slider functionality with auto-generated dots and arrows
 document.addEventListener('DOMContentLoaded', () => {
   initEnhancedSliders();
 });
@@ -13,7 +13,7 @@ function initEnhancedSliders() {
     
     if (!slides.length || !dotsContainer) return;
     
-    // Clear and dynamically generate dots based on the number of slides
+    // 1. Dynamically generate pagination dots
     dotsContainer.innerHTML = '';
     slides.forEach((_, index) => {
       const dot = document.createElement('button');
@@ -22,13 +22,44 @@ function initEnhancedSliders() {
       dot.setAttribute('data-index', index);
       dot.setAttribute('aria-label', `Go to slide ${index + 1}`);
       
-      // Allow clicking dots to jump directly to that slide
       dot.addEventListener('click', () => {
         goToSlide(sliderWrapper, slides, index, dotsContainer);
       });
       
       dotsContainer.appendChild(dot);
     });
+    
+    // 2. Dynamically generate Next / Prev arrows if they aren't there yet
+    if (!container.querySelector('.slider-arrow.prev')) {
+      const prevBtn = document.createElement('button');
+      prevBtn.className = 'slider-arrow prev';
+      prevBtn.innerHTML = '&#10094;'; // Left chevron arrow
+      prevBtn.setAttribute('aria-label', 'Previous slide');
+      
+      const nextBtn = document.createElement('button');
+      nextBtn.className = 'slider-arrow next';
+      nextBtn.innerHTML = '&#10095;'; // Right chevron arrow
+      nextBtn.setAttribute('aria-label', 'Next slide');
+      
+      container.appendChild(prevBtn);
+      container.appendChild(nextBtn);
+      
+      prevBtn.addEventListener('click', () => {
+        const activeDot = dotsContainer.querySelector('.slider-dot.active, .featured-dot.active');
+        if (!activeDot) return;
+        const currentIndex = parseInt(activeDot.dataset.index);
+        const prevIndex = Math.max(currentIndex - 1, 0);
+        goToSlide(sliderWrapper, slides, prevIndex, dotsContainer);
+      });
+      
+      nextBtn.addEventListener('click', () => {
+        const activeDot = dotsContainer.querySelector('.slider-dot.active, .featured-dot.active');
+        if (!activeDot) return;
+        const currentIndex = parseInt(activeDot.dataset.index);
+        const nextIndex = Math.min(currentIndex + 1, slides.length - 1);
+        goToSlide(sliderWrapper, slides, nextIndex, dotsContainer);
+      });
+    }
     
     setupEnhancedTouchControls(container, sliderWrapper, slides, dotsContainer);
     setupKeyboardControls(container, sliderWrapper, slides, dotsContainer);
@@ -48,7 +79,6 @@ function setupEnhancedTouchControls(container, wrapper, slides, dotsContainer) {
   
   container.addEventListener('touchmove', (e) => {
     if (!startX) return;
-    
     moveX = e.touches[0].clientX;
     moveY = e.touches[0].clientY;
     
@@ -84,11 +114,9 @@ function setupEnhancedTouchControls(container, wrapper, slides, dotsContainer) {
     
     if (Math.abs(diff) > threshold) {
       if (diff > 0) {
-        const nextIndex = Math.min(currentIndex + 1, slides.length - 1);
-        goToSlide(wrapper, slides, nextIndex, dotsContainer);
+        goToSlide(wrapper, slides, Math.min(currentIndex + 1, slides.length - 1), dotsContainer);
       } else {
-        const prevIndex = Math.max(currentIndex - 1, 0);
-        goToSlide(wrapper, slides, prevIndex, dotsContainer);
+        goToSlide(wrapper, slides, Math.max(currentIndex - 1, 0), dotsContainer);
       }
     } else {
       goToSlide(wrapper, slides, currentIndex, dotsContainer);
@@ -106,19 +134,12 @@ function setupKeyboardControls(container, wrapper, slides, dotsContainer) {
   container.addEventListener('keydown', (e) => {
     const activeDot = dotsContainer.querySelector('.slider-dot.active, .featured-dot.active');
     if (!activeDot) return;
-    
     const currentIndex = parseInt(activeDot.dataset.index);
     
     if (e.key === 'ArrowLeft') {
-      const prevIndex = Math.max(currentIndex - 1, 0);
-      if (prevIndex !== currentIndex) {
-        goToSlide(wrapper, slides, prevIndex, dotsContainer);
-      }
+      goToSlide(wrapper, slides, Math.max(currentIndex - 1, 0), dotsContainer);
     } else if (e.key === 'ArrowRight') {
-      const nextIndex = Math.min(currentIndex + 1, slides.length - 1);
-      if (nextIndex !== currentIndex) {
-        goToSlide(wrapper, slides, nextIndex, dotsContainer);
-      }
+      goToSlide(wrapper, slides, Math.min(currentIndex + 1, slides.length - 1), dotsContainer);
     }
   });
 }
@@ -130,12 +151,8 @@ function goToSlide(sliderWrapper, slides, index, dotsContainer) {
   sliderWrapper.style.transform = `translateX(-${index * slideWidth}px)`;
   
   const dots = dotsContainer.querySelectorAll('.slider-dot, .featured-dot');
-  dots.forEach(dot => {
-    dot.classList.remove('active');
-  });
-  if (dots[index]) {
-    dots[index].classList.add('active');
-  }
+  dots.forEach(dot => dot.classList.remove('active'));
+  if (dots[index]) dots[index].classList.add('active');
 }
 
 function getTranslateX(element) {
