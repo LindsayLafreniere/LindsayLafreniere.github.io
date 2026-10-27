@@ -9,7 +9,7 @@ function initEnhancedSliders() {
   sliderContainers.forEach((container) => {
     const sliderWrapper = container.querySelector('.slider-wrapper');
     const slides = sliderWrapper.querySelectorAll('.writing-item, .featured-item');
-    const dotsContainer = container.nextElementSibling;
+  const dotsContainer = container.querySelector('.slider-dots, .featured-dots');
     
     if (!slides.length || !dotsContainer) return;
     
